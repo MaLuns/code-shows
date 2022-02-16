@@ -2874,11 +2874,6 @@ throat@^6.0.1:
   resolved "https://registry.yarnpkg.com/throat/-/throat-6.0.1.tgz#d514fedad95740c12c2d7fc70ea863eb51ade375"
   integrity sha512-8hmiGIJMDlwjg7dlJ4yKGLK8EsYqKgPWbG3b4wjJddKNwc7N7Dpn08Df4szr/sZdMVeOstrdYSsqzX6BYbcB+w==
 
-tildify@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmmirror.com/tildify/-/tildify-3.0.0.tgz#f938edb127cfe9a9d84871b37dc0c1e5447c3069"
-  integrity sha512-9ZLMl75qnTLr7oSEmWJbKemFS/fP4TMBiF6PFwGwLpgobebU1ehXoGbadJ+7jT8fjaz2G82JgN9G4taz+o1j1w==
-
 tmpl@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
