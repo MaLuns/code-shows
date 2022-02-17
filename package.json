@@ -11,6 +11,7 @@
   "scripts": {
     "code": "ml-code",
     "debug:serve": "ml-code serve 1222 23213",
+    "eslint": "eslint --fix",
     "test": "jest"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "serve-static": "^1.14.2"
   },
   "devDependencies": {
+    "eslint": "^8.9.0",
     "jest": "^27.5.1"
   }
 }
