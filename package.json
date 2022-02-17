@@ -10,7 +10,7 @@
   },
   "scripts": {
     "code": "ml-code",
-    "debug:serve": "ml-code serve 1222 23213",
+    "serve": "ml-code serve 1222",
     "eslint": "eslint --fix",
     "test": "jest"
   },
