@@ -6,7 +6,8 @@
         "es2021": true
     },
     "globals": {
-        "process": true
+        "process": true,
+        "Buffer": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
