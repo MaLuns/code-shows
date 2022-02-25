@@ -12,7 +12,7 @@
     "code": "ml-code",
     "serve": "ml-code s 1222",
     "generate": "ml-code g",
-    "eslint": "eslint --fix",
+    "eslint": "eslint --fix lib/**",
     "test": "jest"
   },
   "dependencies": {
