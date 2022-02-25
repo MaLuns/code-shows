@@ -12,6 +12,8 @@
     "code": "ml-code",
     "serve": "ml-code s 1222",
     "generate": "ml-code g",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "eslint": "eslint --fix",
     "test": "jest"
   },
