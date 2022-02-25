@@ -14,7 +14,7 @@
     "generate": "ml-code g",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "eslint": "eslint --fix",
+    "eslint": "eslint --fix lib/**",
     "test": "jest"
   },
   "dependencies": {
