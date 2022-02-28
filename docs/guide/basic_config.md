@@ -28,7 +28,7 @@ code.config.json 配置文件说明。
 | source_dir | 代码片段目录 | source |
 | asset_dir | 资源目录 | asset |
 | script_dir | 脚本插件 | script |
-| theme_dir | 主题 | script |
+| theme_dir | 主题 | theme |
 | dist_dir | 构建输出目录 | dist |
 
 #### 其他
@@ -39,6 +39,6 @@ code.config.json 配置文件说明。
 | pagination | 分页 |  |
 | pagination.dir | 分页生成目录 | page |
 | pagination.path | 路径 |  |
-| pagination.per_page | 页码 | 10 |
+| pagination.per_page | 每页条数 | 10 |
 | pagination.order_by | 排序 | ['date', 'desc'] |
 
