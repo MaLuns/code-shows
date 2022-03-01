@@ -5,17 +5,17 @@ Code-shows 是一个将代码片段生成为可在线编辑的静态网页的工
 - code-shows        
 - compiler      文件编译
 - source        片段文件编译 => 继承自compiler
-    - builder   使用 plugins 里的 builder
+    - loader   使用 plugins 里的 loader
 - theme         主题编译 =>  继承自compiler
-    - builder   主题构建器 => 加载主题原始文件
+    - loader   主题构建器 => 加载主题原始文件
 - database      数据缓存
 - extend        扩展管理
-    - builder   
+    - loader   
     - console   
     - generator 
     - renderer  
 - plugins       
-    - builder   构建器 => 加载代码原始文件
+    - loader   构建器 => 加载代码原始文件
     - console   命令   => 处理 cli 命令 
     - generator 生成器 => 对构建产物进行处理
     - renderer  渲染器 => 结合主题渲染成静态文件
@@ -34,7 +34,7 @@ codeShows => 初始化 => load                                      loaded => �
 # 初始化：注册路由、加载插件 、加载db、加载配置等。
 # 代码片段builder: 处理静态文件、代码片段 => 文件变量信息 => 将生成信息插入到 db。
 # 主题目录builder: 处理静态文件、模版文件 => 文件变量信息 => 将生成信息插入到 db。
-# 生成器generate:  将 db 里 builder 生成文件信息 转换为 可读流 => 存入router缓存。
+# 生成器generate:  将 db 里 loader 生成文件信息 转换为 可读流 => 存入router缓存。
 # 创建静态文件: 读取 router 缓存 => 如果静态文件直接读取文件流生成文件，如果是代码片段文件则 将 代码片段文件信息 注入到主题模版进行渲染，将渲染数据生成文件。
 ```
 

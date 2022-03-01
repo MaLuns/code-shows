@@ -1,5 +1,5 @@
 ## generator
-builder => generator
+loader => generator
 ``` js
 [{
     path: 'path', // 文件输出相对路径
