@@ -8,6 +8,7 @@ lang: zh-CN
 
 ### 安装
 从头搭建一个 Code-Shows 项目仅仅只需要几行命令就可以完成。
+
 **安装 Code-Shows**
 ``` bash
 $ npm install code-shows -g

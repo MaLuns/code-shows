@@ -2,18 +2,14 @@
 code.config.json 配置文件说明。
 
 #### 站点
-| 参数 | 描述 |
-| ----------- | ----------- |
-| title | 网站标题 |
-| subtitle | 网站副标题 |
-| description | 网站描述 |
-| keywords | 网站的关键词。支持多个关键词。 |
-| author | 您的名字 |
-| language | 网站使用的语言 |
-
-#### 网址
 | 参数 | 描述 | 默认值 |
-| ----------- | ----------- | ----------- |
+| ----------- | ----------- |
+| title | 网站标题 |  | 
+| subtitle | 网站副标题 |  | 
+| description | 网站描述 |  | 
+| keywords | 网站的关键词。支持多个关键词。 |  | 
+| author | 您的名字 |  | 
+| language | 网站使用的语言 | zh-Hans | 
 | url | 网址 |  | 
 | root | 网站根目录 | / |
 
@@ -38,7 +34,6 @@ code.config.json 配置文件说明。
 | default_layout | 默认布局 | view |
 | pagination | 分页 |  |
 | pagination.dir | 分页生成目录 | page |
-| pagination.path | 路径 |  |
 | pagination.per_page | 每页条数 | 10 |
 | pagination.order_by | 排序 | ['date', 'desc'] |
 
