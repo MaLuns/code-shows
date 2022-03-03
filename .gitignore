@@ -5,3 +5,4 @@ template
 .DS_Store
 .idea
 *.iml
+workspace.code-workspace

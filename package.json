@@ -6,12 +6,12 @@
   "author": "Maluns",
   "license": "MIT",
   "bin": {
-    "ml-code": "./bin/codeshows"
+    "code-shows": "./bin/codeshows"
   },
   "scripts": {
-    "code": "ml-code",
-    "serve": "ml-code s 1222",
-    "generate": "ml-code g",
+    "code": "code-shows",
+    "serve": "code-shows s",
+    "generate": "code-shows g",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "eslint": "eslint --fix lib/**",
