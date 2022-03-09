@@ -3,10 +3,10 @@ title: 介绍
 lang: zh-CN
 ---
 
-### 什么是 Code-Shows
+## 什么是 Code-Shows
 Code-Shows 是一个将零碎代码片段生成可在线编辑展示的工具。Code-Shows 解析文件中的 **<template\>**、**<script\>** 和 **<style\>** 三个片段块，配合主题生成静态网页。
 
-### 它是如何工作的？
+## 它是如何工作的？
 Code-Shows 项目结构和实现是借鉴了 [Hexo](https://hexo.io/zh-cn/)，工作原理也是相似的。
 
 构建流程示例：

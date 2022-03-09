@@ -24,6 +24,21 @@ module.exports = {
                         'basic_config'
                     ]
                 },
+                {
+                    title: '扩展',
+                    collapsable: false,
+                    children: [
+                        'plugin/',
+                        'plugin/console',
+                        'plugin/loader',
+                        'plugin/converter',
+                        'plugin/generator',
+                        'plugin/renderer',
+                        'plugin/middlewarer',
+                        'plugin/deployer',
+                        'plugin/helper',
+                    ]
+                },
             ],
         },
         nextLinks: true,

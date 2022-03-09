@@ -1,7 +1,7 @@
-### 配置文件
+# 配置文件
 code.config.json 配置文件说明。
 
-#### 站点
+## 站点
 | 参数 | 描述 | 默认值 |
 | ----------- | ----------- | ----------- |
 | title | 网站标题 | code-shows | 
@@ -18,7 +18,7 @@ code.config.json 配置文件说明。
 如果您的网站存放在子目录中，例如 http://example.com/code url 设为 http://example.com/code 并把 root 设为 /code/。
 :::
 
-#### 目录
+## 目录
 | 参数 | 描述 | 默认值 |
 | ----------- | ----------- | ----------- |
 | source_dir | 代码片段目录 | source |
@@ -27,7 +27,7 @@ code.config.json 配置文件说明。
 | theme_dir | 主题 | theme |
 | dist_dir | 构建输出目录 | dist |
 
-#### 模板配置
+## 模板配置
 | 参数 | 描述 | 默认值 |
 | ----------- | ----------- | ----------- |
 | new_code_file | 代码片段类型 | ['.vue', '.html'] |
@@ -37,14 +37,14 @@ code.config.json 配置文件说明。
 | pagination.per_page | 每页条数 | 10 |
 | pagination.order_by | 排序 | ['date', 'desc'] |
 
-#### 本地服务
+## 本地服务
 | 参数 | 描述 | 默认值 |
 | ----------- | ----------- | ----------- |
 | server.port | 端口 | 3000 |
 | server.cache | 缓存构建 | true |
 | server.serve_static | 使用静态文件 | false |
 
-#### 部署
+## 部署
 | 参数 | 描述 | 默认值 |
 | ----------- | ----------- | ----------- |
 | deploy.type | 类型 | git |
