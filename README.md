@@ -1,5 +1,5 @@
-# Code-Shows
-Code-shows 是一个将代码片段生成为可在线编辑的静态网页的工具。
+<h1 align="center">Code-Shows</h1>
+<div>Code-shows 是一个将代码片段生成为可在线编辑的静态网页的工具。</div>
 
 ## 快速开始
 

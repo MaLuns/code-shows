@@ -15,7 +15,7 @@ code.config.json 配置文件说明。
 
 
 ::: warning 网站存放在子目录
-如果您的网站存放在子目录中，例如 http://example.com/code url 设为 http://example.com/code 并把 root 设为 /code/。
+如果您的网站存放在子目录中，例如 http://example.com/code， url 设为 http://example.com 并把 root 设为 /code/。
 :::
 
 ## 目录

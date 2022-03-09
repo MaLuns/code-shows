@@ -17,7 +17,7 @@ code.extend.loader.register({
 须包含一个 **match** 函数，**path** 为当前加载文件路径，**match** 需要返回一个 **Bool** 值。
 
 ### load
-预处理文件信息，并将信息根据需求将 **codeFiles** 存入 **PostCache**，静态资源文件存入 **PostAssetCache** 中。
+预处理文件信息，并将信息根据需求将 **codeFiles** 存入 **CodeCache**，静态资源文件存入 **CodeAssetCache** 中。
  
 代码片段结构
 ``` js

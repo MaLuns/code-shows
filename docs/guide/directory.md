@@ -6,6 +6,10 @@ Code-Shows 所有目录都可配置，推荐的目录结构如下：
 .
 ├── asset // 全局资源目录
 ├── source // 代码片段目录
+│   └── demo // 示例1
+│       ├── img.png
+│       └── index.html 
+|
 ├── script // 脚本插件
 │   ├── ...
 │   └── console // 注册命令脚步
@@ -21,5 +25,5 @@ Code-Shows 所有目录都可配置，推荐的目录结构如下：
 ```
 
 ::: warning 注意
-注册命令扩展需要在 console 目录下，如果注册命令不需要加载扩展等，可以在 skip_console 中添加跳过加载插件提高性能。theme.source 下的文件最后会合并到 asset 下，如果需要处理的文件类型如 .less 等，会先调用 render 对文件进行处理。
+注册命令扩展需要在 console 目录下，如果注册命令不需要加载扩展等，可以在 skip_console 中添加跳过加载插件提高性能。theme.source 下的文件最后会合并到 asset 下，如果需要处理的文件类型如 .less 等，会先调用 render 对文件进行处理。 
 :::
