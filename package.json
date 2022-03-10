@@ -32,6 +32,7 @@
     "less": "^4.1.2",
     "lodash": "^4.17.21",
     "mime": "^3.0.0",
+    "minimatch": "^5.0.1",
     "pretty-hrtime": "^1.0.3",
     "serve-static": "^1.14.2"
   },

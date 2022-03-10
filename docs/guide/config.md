@@ -27,15 +27,29 @@ code.config.json 配置文件说明。
 | theme_dir | 主题 | theme |
 | dist_dir | 构建输出目录 | dist |
 
+## 代码片段
+| 参数 | 描述 | 默认值 |
+| ----------- | ----------- | ----------- |
+| code_file.include | 匹配需要处理文件或文件 | ['\*\*.vue', '\*\*.html'] |
+| code_file.exclude | 无需处理目录或文件 | [] |
+| code_file.ignore | 忽略文件或目录 | view |
+
+::: tip 提示
+除了会忽略**ignore**配置文件或目录，还会忽略 **.** 开头文件和临时文件 **~**、**%** 结尾的。
+:::
+
 ## 模板配置
 | 参数 | 描述 | 默认值 |
 | ----------- | ----------- | ----------- |
-| new_code_file | 代码片段类型 | ['.vue', '.html'] |
-| default_layout | 默认布局 | view |
-| pagination | 分页 |  |
+| theme.layout | 默认布局 | view |
+| theme.use | 指定主题 |  |
 | pagination.dir | 分页生成目录 | page |
-| pagination.per_page | 每页条数 | 10 |
+| pagination.per_page | 每页条数 | 6 |
 | pagination.order_by | 排序 | ['date', 'desc'] |
+
+::: tip 提示
+如果 theme.use 为空，默认会加载 theme 目录作为主题模板，如果指定了 theme.use，则会使用 ./node_moudles/**theme.use** 目录作为主题模板。
+:::
 
 ## 本地服务
 | 参数 | 描述 | 默认值 |
@@ -54,3 +68,8 @@ code.config.json 配置文件说明。
 ::: tip 自定义脚本
 如果需要编写自定义部署脚本，可通过  deployer.register('git', fun) 添加自己部署脚本。如果需要部署到多个不同服务，可将 deploy 改为数组，部署时会遍历 deploy 匹配符合当前 type 的部署脚本。
 :::
+
+## 其他
+| 参数 | 描述 | 默认值 |
+| ----------- | ----------- | ----------- |
+| skip_console | 无需注册插件的命令 | [] |
