@@ -25,8 +25,8 @@ module.exports = {
                     children: [
                         '',
                         'setup',
+                        'config',
                         'directory',
-                        'config'
                     ]
                 },
             ],

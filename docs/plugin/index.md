@@ -3,14 +3,14 @@ Code-Shows 所有模块都可通过注册自定义插件，以便更方便的扩
 
 ## 使用
 ### 脚本
-所有的脚本只需要放入 **script** 和 **theme.script** 目录下，在程序运行时会默认加载到程序里。
-加载脚本时会被注入一个为 **code** 全局变量，这个 **code** 也就是程序实例，通过  **code** 来注册不同功能类型脚本。
+所有的脚本只需要放入 `script` 和 `theme.script` 目录下，在程序运行时会默认加载到程序里。
+加载脚本时会被注入一个为 `code` 全局变量，这个 `code` 也就是程序实例，通过  `code` 来注册不同功能类型脚本。
 
 ### npm 包
 待支持。
 
 ## DataBase
-Code-Shows 使用 **Map** 来缓存构建时的信息，下面所有的 **_id** 都是 **Map** 对应的 **key**，其他字段都是其 **value**。下面字段都是程序必须的，但是你也可以对下面字段进行扩展。
+Code-Shows 使用 `Map` 来缓存构建时的信息，下面所有的 `_id` 都是 `Map` 对应的 `key`，其他字段都是其 `value`。下面字段都是程序必须的，但是您也可以对下面字段进行扩展。
 
 | db | 描述 | 
 | ----------- | ----------- |
@@ -20,7 +20,7 @@ Code-Shows 使用 **Map** 来缓存构建时的信息，下面所有的 **_id** 
 | AssetCache | 全局静态文件信息 |
 
 #### FileCache
-FileCache 存储所有文件 **Hash** 和 **modified**，用来判断文件是否修改更新。
+FileCache 存储所有文件 `Hash` 和 `modified`，用来判断文件是否修改更新。
 
 | 字段 | 描述 | 类型 | 
 | ----------- | ----------- | ----------- |
@@ -29,7 +29,7 @@ FileCache 存储所有文件 **Hash** 和 **modified**，用来判断文件是�
 | modified | 文件最后修改时间 | Number |
 
 #### CodeCache
-CodeCache 存储所有 **代码片段** 文件信息。
+CodeCache 存储所有 `代码片段` 文件信息。
 | 字段 | 描述 | 类型 | 
 | ----------- | ----------- |----------- |
 | _id | 文件相对路径 | String |
@@ -45,7 +45,7 @@ CodeCache 存储所有 **代码片段** 文件信息。
 
 
 #### CodeAssetCache
-CodeAssetCache 主要存储时 **source/** 下所有非 **代码片段** 文件信息。
+CodeAssetCache 主要存储时 `source/` 下所有非 `代码片段` 文件信息。
 
 | 字段 | 描述 | 类型 | 
 | ----------- | ----------- | ----------- |
@@ -55,7 +55,7 @@ CodeAssetCache 主要存储时 **source/** 下所有非 **代码片段** 文件�
 | modified | 是否修改 | Boolean |
 
 #### AssetCache
-AssetCache 存储的文件是 **theme/source** 、**asset** 下文件信息。
+AssetCache 存储的文件是 `theme/source` 、`asset` 下文件信息。
 
 | 字段 | 描述 | 类型 | 
 | ----------- | ----------- | ----------- |
@@ -65,5 +65,5 @@ AssetCache 存储的文件是 **theme/source** 、**asset** 下文件信息。
 | modified | 是否修改 | Boolean |
 
 ::: warning  说明
-CodeAssetCache、AssetCache 存储内容结构是一样的，但是用途是不一样的。CodeAssetCache 主要是存储 **代码片段** 文件里使用的静态资源文件，AssetCache 主要是存储全局静态资源文件和主题下的静态资源文件。 
+CodeAssetCache、AssetCache 存储内容结构是一样的，但是用途是不一样的。CodeAssetCache 主要是存储 `代码片段` 文件里使用的静态资源文件，AssetCache 主要是存储全局静态资源文件和主题下的静态资源文件。 
 :::
