@@ -6,7 +6,7 @@
 ``` html
 <%- css(paths) %>
 ```
-示例
+示例：
 ``` html
 <%- css('style.css') %>
 // <link rel="stylesheet" href="/style.css">
@@ -24,7 +24,7 @@
 ``` html
 <%- js(paths) %>
 ```
-示例
+示例：
 ``` html
 <%- js('script.js') %>
 // <script src="/script.js"></script>
@@ -42,7 +42,7 @@
 ``` ejs
 <%- js(tag, props, innerHTML) %>
 ```
-示例
+示例：
 ``` html
 <%- js('div', {id:'id'}, 'hello') %>
 // <div id="id">
@@ -71,11 +71,12 @@
 ``` html
 <%- variable(name,val) %>
 ```
-示例
+示例：
 ``` html
-// 假设有个 page.loc = {id:'a',date:'2022-1-1'}
+// 假设有个变量 page.loc = {id:'a',date:'2022-1-1'}
 <%- variable('_loc', page.log) %>
 
+// 结果
 <script>
 window._loc = {
     id:'a',
@@ -89,7 +90,8 @@ window._loc = {
 ``` html
 <%- url_format(path) %>
 ```
-示例
+示例：
+
 假设配置了 root：/code/、url：https://demo.com
 ``` html
 <%- url_format('path') %>

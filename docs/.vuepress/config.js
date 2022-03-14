@@ -25,8 +25,9 @@ module.exports = {
                     children: [
                         '',
                         'setup',
-                        'config',
                         'directory',
+                        'config',
+                        'plugin',
                     ]
                 },
             ],
@@ -44,19 +45,28 @@ module.exports = {
             ],
             '/plugin/': [
                 {
-                    title: '扩展',
+                    title: '指南',
                     collapsable: false,
                     children: [
                         '',
+                        'core',
+                        'event',
+                        'database',
+                    ],
+                },
+                {
+                    title: '扩展',
+                    collapsable: false,
+                    children: [
                         'console',
                         'loader',
                         'converter',
                         'generator',
                         'renderer',
                         'middlewarer',
-                        'deployer',
                         'helper',
-                    ]
+                        'deployer',
+                    ],
                 },
             ]
         },
