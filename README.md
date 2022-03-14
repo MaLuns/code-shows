@@ -1,5 +1,8 @@
 <h1 align="center">Code-Shows</h1>
-<div>Code-shows 是一个将代码片段生成为可在线编辑的静态网页的工具。</div>
+<div align="center">Code-shows 是一个将代码片段生成为可在线编辑的静态网页的工具。</div>
+
+## 文档
+文档查看地址 [https://code-shows.imalun.com/](https://code-shows.imalun.com/).
 
 ## 快速开始
 
@@ -14,21 +17,21 @@ yarn global add code-shows
 
 **初始化项目**
 ```
-ml-code init [name]
+code-shows init [name]
 cd [name]
 ```
 
 **启动本地服务**
 ```
-ml-code serve
+code-shows serve
 ```
 
 **创建代码片段**
 ```
-ml-code new <name>
+code-shows new <name>
 ```
 
 **生成静态文件**
 ```
-ml-code generate
+code-shows generate
 ```
