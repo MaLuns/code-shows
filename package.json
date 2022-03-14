@@ -1,7 +1,7 @@
 {
   "name": "code-shows",
   "version": "1.0.0",
-  "description": "代码展示",
+  "description": "代码展示平台工具",
   "main": "index.js",
   "author": "Maluns",
   "license": "MIT",
@@ -39,5 +39,10 @@
   "devDependencies": {
     "eslint": "^8.9.0",
     "jest": "^27.5.1"
-  }
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "package.json"
+  ]
 }
