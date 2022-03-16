@@ -22,4 +22,4 @@ jobs:
         TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: yarn global add vuepress && yarn && yarn docs:build
         BUILD_DIR: docs/.vuepress/dist
-        CNAME: https://codeshows.imalun.com
+        CNAME: https://code-shows.imalun.com
