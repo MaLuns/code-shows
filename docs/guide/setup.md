@@ -26,6 +26,28 @@ cd [name]
 $ code-shows new <name>
 ```
 
+Code-Shows 以内置对 html、css、javascript、ejs、Pug、less、Scss、TypeScrpit、coffeescript 多种语言支持。
+
+示例：
+``` html
+// [name].html
+---
+title: Hello Word
+date: 2022-02-08 19:49:55
+description: Hello Word
+tags:
+---
+<div class="demo">
+    Hello Word
+</div>
+<style lang='less'>
+    .demo {
+        padding: 50px;
+        text-align: center;
+    }
+</style>
+```
+
 **开启本地服务**
 ``` bash
 $ code-shows serve
