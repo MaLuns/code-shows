@@ -12,20 +12,24 @@ code.extend.converter.register(language, function(code) {
 
 ``` js
 {
+  code: {
     html: {
         language: 'monaco-editor 语言类型',
         source: '原始代码片段',
-        text: '转换后的值'
     },
     style: {
         language: 'monaco-editor 语言类型',
         source: '原始代码片段',
-        text: '转换后的值 例如 less转换成css'
     },
     script: {
         language: 'monaco-editor 语言类型',
         source: '原始代码片段',
-        text: '转换后的值 例如 ts转换成js'
     }
+  },
+  preview: {
+    html: "",
+    script: "",
+    style: "",
+  }
 }
 ```

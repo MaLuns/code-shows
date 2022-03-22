@@ -22,6 +22,7 @@
 | site.codes.date | 代码片段建立日期 | Date |
 | site.codes.raw | 代码片段原始内容 | String |
 | site.codes.code | 代码信息 | Object ([page.code](#page-code)) |
+| site.codes.preview | 编译后代码 | Object ([page.preview](#page-preview))|
 
 ## 页面变量
 
@@ -49,6 +50,7 @@
 | page.date | 代码片段创建日期 | Date |
 | page.raw | 代码片段原始内容 | String |
 | page.code | 代码信息 | Object |
+| page.preview | 编译后代码 | Object |
 | page.prev | 上一个页面 | String |
 | page.next | 下一个页面 | String |
 | page.__view | 预览页标识 | Boolean |
@@ -62,23 +64,33 @@
 
 | 变量 | 描述 | 类型 |
 |:----------- | ----------- |:-----------:|
-| [type].language | monaco-editor 语言类型 | String |
-| [type].source | 原始代码片段 | String |
-| [type].text | 转换后的值 例如 ts转换成js less转换成css | String |
+| page.code.[type].language | monaco-editor 语言类型 | String |
+| page.code.[type].source | 原始代码片段 | String |
+| page.code.[type].text | 转换后的值 例如 ts转换成js less转换成css | String |
 
 
 示例：
 ``` js
 {
     html: {
-        language: 'html',
-        source: '<div class="demo"></div>',
-        text: '<div class="demo"></div>'
+        language: 'monaco-editor 语言类型',
+        source: '原始代码片段',
     },
     style: {
-        language: 'css',
-        source: '.demo { height: 200px; background-color: red; }',
-        text: '.demo { height: 200px; background-color: red; }'
+        language: 'monaco-editor 语言类型',
+        source: '原始代码片段',
+    },
+    script: {
+        language: 'monaco-editor 语言类型',
+        source: '原始代码片段',
     }
 }
 ```
+
+#### page.preview
+
+| 变量 | 描述 | 类型 |
+|:----------- | ----------- |:-----------:|
+| page.preview.html | HTML便片段 | String |
+| page.preview.script | JS片段 | String |
+| page.preview.style | CSS片段 | String |
