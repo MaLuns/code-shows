@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>辅助函数 | Code-Shows</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.png">
+    <meta name="description" content="Code Shows">
+    
+    <link rel="preload" href="/assets/css/0.styles.de85284f.css" as="style"><link rel="preload" href="/assets/js/app.8f76f275.js" as="script"><link rel="preload" href="/assets/js/2.3aad237e.js" as="script"><link rel="preload" href="/assets/js/25.b1ab3736.js" as="script"><link rel="prefetch" href="/assets/js/10.70727c08.js"><link rel="prefetch" href="/assets/js/11.8a3654d0.js"><link rel="prefetch" href="/assets/js/12.086f245d.js"><link rel="prefetch" href="/assets/js/13.63edce19.js"><link rel="prefetch" href="/assets/js/14.857f57c0.js"><link rel="prefetch" href="/assets/js/15.2d5b496a.js"><link rel="prefetch" href="/assets/js/16.a1aa7eb6.js"><link rel="prefetch" href="/assets/js/17.6df2ee69.js"><link rel="prefetch" href="/assets/js/18.fbed77a6.js"><link rel="prefetch" href="/assets/js/19.36993344.js"><link rel="prefetch" href="/assets/js/20.cb734311.js"><link rel="prefetch" href="/assets/js/21.b08653ee.js"><link rel="prefetch" href="/assets/js/22.333ed5d0.js"><link rel="prefetch" href="/assets/js/23.5a205163.js"><link rel="prefetch" href="/assets/js/24.db184317.js"><link rel="prefetch" href="/assets/js/26.5d6941a3.js"><link rel="prefetch" href="/assets/js/27.56a5d4a9.js"><link rel="prefetch" href="/assets/js/28.96149c59.js"><link rel="prefetch" href="/assets/js/3.c98633cf.js"><link rel="prefetch" href="/assets/js/4.8bb5673c.js"><link rel="prefetch" href="/assets/js/5.03b870ec.js"><link rel="prefetch" href="/assets/js/6.3568d646.js"><link rel="prefetch" href="/assets/js/7.b1b69c7f.js"><link rel="prefetch" href="/assets/js/8.91b8e2a5.js"><link rel="prefetch" href="/assets/js/9.4fb555d4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.de85284f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Code-Shows</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/theme/" class="nav-link router-link-active">
+  主题
+</a></div><div class="nav-item"><a href="/plugin/" class="nav-link">
+  扩展
+</a></div> <a href="https://github.com/maluns/code-shows" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/theme/" class="nav-link router-link-active">
+  主题
+</a></div><div class="nav-item"><a href="/plugin/" class="nav-link">
+  扩展
+</a></div> <a href="https://github.com/maluns/code-shows" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>主题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/theme/" aria-current="page" class="sidebar-link">介绍</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/theme/layout.html" class="sidebar-link">模版</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/theme/layout.html#布局" class="sidebar-link">布局</a></li><li class="sidebar-sub-header"><a href="/theme/layout.html#局部模版" class="sidebar-link">局部模版</a></li></ul></li><li><a href="/theme/variable.html" class="sidebar-link">变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/theme/variable.html#全局" class="sidebar-link">全局</a></li><li class="sidebar-sub-header"><a href="/theme/variable.html#页面变量" class="sidebar-link">页面变量</a></li></ul></li><li><a href="/theme/helper.html" aria-current="page" class="active sidebar-link">辅助函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/theme/helper.html#css" class="sidebar-link">css</a></li><li class="sidebar-sub-header"><a href="/theme/helper.html#js" class="sidebar-link">js</a></li><li class="sidebar-sub-header"><a href="/theme/helper.html#tag" class="sidebar-link">tag</a></li><li class="sidebar-sub-header"><a href="/theme/helper.html#paginator" class="sidebar-link">paginator</a></li><li class="sidebar-sub-header"><a href="/theme/helper.html#variable" class="sidebar-link">variable</a></li><li class="sidebar-sub-header"><a href="/theme/helper.html#url-format" class="sidebar-link">url_format</a></li><li class="sidebar-sub-header"><a href="/theme/helper.html#full-url-for" class="sidebar-link">fullurlfor</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="辅助函数"><a href="#辅助函数" class="header-anchor">#</a> 辅助函数</h1> <p>辅助函数帮助您在模版中快速插入内容。辅助函数不能在源文件中使用。</p> <h2 id="css"><a href="#css" class="header-anchor">#</a> css</h2> <p>载入 CSS 文件。paths 可以是数组、字符串、对象，如果是 字符串数组 和 字符串 如果 path 开头不是 // 或 http(s)，则会自动加上根路径；如果后面没有加上 .css 扩展名的话，也会自动加上。如果是对象着属性都会被当作 HTML 属性。</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- css(paths) %&gt;
+</code></pre></div><p>示例：</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- css('style.css') %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/style.css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+&lt;%- css(['style.css', 'screen.css']) %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/style.css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/screen.css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+&lt;%- css({ href: 'style.css', integrity: 'foo' }) %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>style.css<span class="token punctuation">&quot;</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="js"><a href="#js" class="header-anchor">#</a> js</h2> <p>载入 JavaScript 文件。与上面 css() 使用方法一直。</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- js(paths) %&gt;
+</code></pre></div><p>示例：</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- js('script.js') %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/script.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+&lt;%- js(['script.js', 'gallery.js']) %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/script.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/gallery.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+&lt;%- js({ src: 'script.js', integrity: 'foo', async: true }) %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/script.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">async</span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="tag"><a href="#tag" class="header-anchor">#</a> tag</h2> <p>生成HTML元素。tag 为标签名，props 为元素属性，innerHTML 为元素子元素文本。props 可为字符串或对象，如果是字符串将忽略 innerHTML。innerHTML 则可为字符串和字符串数组。</p> <div class="language-ejs extra-class"><pre class="language-ejs"><code><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">js</span><span class="token punctuation">(</span>tag<span class="token punctuation">,</span> props<span class="token punctuation">,</span> innerHTML<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+</code></pre></div><p>示例：</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- js('div', {id:'id'}, 'hello') %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+//     hello
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+&lt;%- js('div', {id:'id'}, 【'hello','word']) %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+//     hello word
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+&lt;%- js('div', 'hello') %&gt;
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+//     hello
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="paginator"><a href="#paginator" class="header-anchor">#</a> paginator</h2> <p>插入分页链接，给首页列表生成分页。</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- paginator(options) %&gt;
+</code></pre></div><h2 id="variable"><a href="#variable" class="header-anchor">#</a> variable</h2> <p>注入全局变量，以便我们将变量快速注入到模版中。name 变量名称，val 需要注入值。</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- variable(name,val) %&gt;
+</code></pre></div><p>示例：</p> <div class="language-html extra-class"><pre class="language-html"><code>// 假设有个变量 page.loc = {id:'a',date:'2022-1-1'}
+&lt;%- variable('_loc', page.log) %&gt;
+
+// 结果
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+window<span class="token punctuation">.</span>_loc <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'a'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">date</span><span class="token operator">:</span><span class="token string">'2022-1-1'</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="url-format"><a href="#url-format" class="header-anchor">#</a> url_format</h2> <p>在路径前加上根路径。</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- url_format(path) %&gt;
+</code></pre></div><p>示例：</p> <p>假设配置了 root：/code/</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- url_format('path') %&gt;
+
+// /code/path
+</code></pre></div><h2 id="full-url-for"><a href="#full-url-for" class="header-anchor">#</a> full_url_for</h2> <p>在路径前加上根路径和域名。</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- full_url_for(path) %&gt;
+</code></pre></div><p>示例：</p> <p>假设配置了 root：/code/、url：https://demo.com</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;%- full_url_for('path') %&gt;
+
+// https://demo.com/code/path
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">2022-04-02 09:11:12</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/theme/variable.html" class="prev">
+        变量
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8f76f275.js" defer></script><script src="/assets/js/2.3aad237e.js" defer></script><script src="/assets/js/25.b1ab3736.js" defer></script>
+  </body>
+</html>
