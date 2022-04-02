@@ -4,7 +4,7 @@
 ## 文档
 💡 [文档查看](https://code-shows.imalun.com/)
 
-👉 [在线效果](https://code-shows.imalun.com/)
+👉 [在线效果](https://code.imalun.com/)
 
 ## 快速开始
 
