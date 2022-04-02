@@ -1,7 +1,7 @@
 {
   "name": "code-shows",
-  "version": "1.0.1",
-  "description": "代码展示平台工具",
+  "version": "1.0.2",
+  "description": "代码展示工具",
   "main": "index.js",
   "author": "Maluns",
   "license": "MIT",
