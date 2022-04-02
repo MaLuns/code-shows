@@ -92,9 +92,23 @@ window._loc = {
 ```
 示例：
 
-假设配置了 root：/code/、url：https://demo.com
+假设配置了 root：/code/
 ``` html
 <%- url_format('path') %>
+
+// /code/path
+```
+
+## full_url_for
+在路径前加上根路径和域名。
+``` html
+<%- full_url_for(path) %>
+```
+示例：
+
+假设配置了 root：/code/、url：https://demo.com
+``` html
+<%- full_url_for('path') %>
 
 // https://demo.com/code/path
 ```
