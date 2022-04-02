@@ -2,7 +2,9 @@
 <div align="center">Code-shows 是一个将代码片段生成为可在线编辑的静态网页的工具。</div>
 
 ## 文档
-文档查看地址 [https://code-shows.imalun.com/](https://code-shows.imalun.com/).
+💡 [文档查看](https://code-shows.imalun.com/)
+
+👉 [在线效果](https://code-shows.imalun.com/)
 
 ## 快速开始
 
